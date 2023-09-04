@@ -1,0 +1,491 @@
+/* body{
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+a{
+    font-family: 'Prata', serif;
+    font-size: 26px;
+    color: black;
+    text-decoration: none;
+}
+
+/**/
+
+.greetingDisplay{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: hidden;
+}
+
+.topic{
+    width: 100vw;
+    height: 100vh;
+
+}
+
+/**/
+
+.topicBg{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    z-index: -10;
+
+    background-color: #134D38;
+}
+
+.paper1{
+    height: 600px;
+    width: 100%;
+
+    position: absolute;
+    top: 65px;
+
+    background-image: url('../../static/paper1.png');
+    background-size: 1910px;
+    background-repeat: repeat-x;
+}
+/**/
+
+/**/
+.topicText{
+    width: 50%;
+    
+    position: absolute;
+    top: 115px;
+    left: 100px;
+
+    font-size: 22px;
+}
+.topicText p{
+    margin-top: 15px;
+}
+#text {
+    font-family: 'Prata', serif;
+    font-size: 23px;
+}
+.topicList{
+    position: absolute;
+    bottom: 100px;
+    left: 60px;
+
+    z-index: -7;
+}
+
+.topicText h1{
+    font-size: 46px;
+    color: #00A09E;
+}
+
+.topicList li{
+    font-family: 'Marck Script', cursive;
+    font-size: 30px;
+    color: white;
+
+    transform: rotate(344deg);
+}
+
+.topicList li:nth-child(1){
+    margin: 15px;
+    margin-left: 0px;
+}
+.topicList li:nth-child(2){
+    margin: 15px;
+    margin-left: 60px;
+}
+.topicList li:nth-child(3){
+    margin: 15px;
+    margin-left: 120px;
+}
+.topicList li:nth-child(4){
+    margin: 15px;
+    margin-left: 180px;
+}
+
+.topicList ul{
+    list-style-type: '+  ';
+}
+.topicList li::marker{
+    font-family: 'Marck Script', cursive;
+    font-size: 35px;
+}
+.topicList li:nth-child(1)::marker{
+    color: #FF5E5B;
+}
+.topicList li:nth-child(2)::marker{
+    color: #D8D8D8;
+}
+.topicList li:nth-child(3)::marker{
+    color: #00CECB;
+}
+.topicList li:nth-child(4)::marker{
+    color: #FFED66;
+}
+
+.topicList img{
+    position: absolute;
+    bottom: -20px;
+    left: 700px;
+}
+
+/**/
+
+.topicRightMenu{
+    width: 940px;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+
+    overflow: hidden;
+
+}
+
+.paper{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    transition: 0.8s;
+}
+
+.paperPhysics{
+    background-image: url('../../static/paperPhysics.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+
+    right: -100px;
+    top: 30px;
+    
+    clip-path: polygon(470px 0%, 100% 0%, 100% 560px, 570px 450px, 420px 370px, 390px 250px, 435px 70px);
+}
+
+
+.paperMath{
+    background-image: url('../../static/paperMath.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position-x: left;
+
+    right: -250px;
+    top: 200px;
+    
+    clip-path: polygon(230px 750px, 90px 660px, 25px 600px, 350px 22px, 415px 40px, 735px 195px, 730px 275px, 650px 465px, 480px 750px);
+}
+
+
+.paperOther{
+    background-image: url('../../static/paperOther.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+
+    right: -100px;
+    top: 100px;
+    
+    clip-path: polygon(100% 475px, 100% 100%, 380px 100%, 420px 700px, 430px 690px, 460px 580px, 475px 565px, 482px 540px, 512px 545px, 560px 495px, 580px 465px, 612px 430px, 650px 355px, 680px 340px, 715px 360px, 735px 390px);
+}
+
+/**/
+
+.paperPhysics div, .paperPhysics a, .paperPhysics img{
+    position: absolute;
+}
+.paperMath div, .paperMath a, .paperMath img{
+    position: absolute;
+}
+
+.paperPhysics div{
+    top: 185px;
+    right: 40px;
+}
+.paperPhysics a{
+    top: 150px;
+    right: 20px;
+    transform: rotate(345deg);
+}
+.paperPhysics h2{
+    font-size: 30px;
+}
+.physics1{
+    right: 100px;
+    width: 55px;
+    top: -40px;
+    transform: rotate(73deg);
+}
+.physics2{
+    right: 170px;
+    width: 55px;
+    transform: rotate(303deg);
+    top: 20px;
+}
+.physics3{
+    width: 80px;
+    right: -10px;
+    top: -35px;
+    transform: rotate(21deg);
+}
+.physics4{
+    width: 90px;
+    right: 50px;
+    top: 30px;
+    transform: rotate(338deg);
+}
+
+/**/
+
+.paperMath div:nth-child(1){
+    top: 170px;
+    right: 500px;
+}
+.paperMath div:nth-child(2){
+    top: 400px;
+    right: 680px;
+}
+.mathBasedTitle h2, .mathAdvancedTitle h2 {
+    font-size: 23px;
+    width: 800px;
+}
+.mathAdvancedTitle{
+    top: 105px;
+    left: -92px;
+    transform: rotate(27deg);
+}
+.mathBasedTitle{
+    transform: rotate(28deg);
+    left: -65px;
+    top: 155px;
+}
+.mathAdvanced1{
+    width: 110px;
+    transform: rotate(29deg);
+    top: 65px;
+    left: 25px;
+}
+.mathAdvanced2{
+    width: 75px;
+    top: 80px;
+    left: -70px;
+}
+.mathAdvanced3{
+    width: 65px;
+    left: -70px;
+}
+.mathBased1{
+    width: 100px;
+    top: 90px;
+    transform: rotate(30deg);
+    left: -80px;
+}
+.mathBased2{
+    width: 70px;
+    top: 110px;
+    left: 50px;
+}
+.mathBased3{
+    width: 80px;
+    top: 190px;
+    left: 70px;
+}
+
+
+
+
+
+/**/
+
+
+.topic2Bg{
+    background-image: url('../../static/paper2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+
+    position: absolute;
+    z-index: -10;
+}
+
+.topic2content h1{
+    font-size: 46px;
+    color: #FF5E5B;
+    text-align: center;
+    padding-top: 70px;
+}
+
+/**/
+
+.sections{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 90vw;
+    height: 70vh;
+
+    margin: auto;
+    margin-top: 40px
+}
+
+.section{
+    width: 20vw;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+.first, .second, .third1, .third2, .forth{
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+
+.first{
+    background-image: url('../../static/list1.png');
+    background-position: top right;
+
+    overflow-y: auto;
+    height: 30vw;
+}
+.first::-webkit-scrollbar{
+    /* direction: rtl; */
+}
+.second{
+    background-image: url('../../static/list2.png');
+    background-position: bottom center;
+}
+.third1{
+    height: 300px;
+    background-image: url('../../static/list3.png');
+    background-position: top center;
+}
+.third2{
+    height: 300px;
+    background-image: url('../../static/list4.png');
+    background-position: top center;
+}
+.forth div{
+    background-image: url('../../static/list5.png');
+    background-position: bottom center;
+}
+
+/**/
+
+.firstInner{
+    width: 80%;
+    position: relative;
+    left: 10px;
+
+    font-size: 25px;
+}
+
+.firstInner img{
+    margin-right:10px;
+}
+
+/* 
+.firstInner{
+    margin-left: 8%;
+    padding-top: 5px;
+}
+.firstInner p{
+    font-size: 24px;
+    width: 72%;
+}
+.firstInner img{
+    width: 90px;
+    position: static;
+    display: inline-block;
+    margin: 15px;
+    margin-top: 0;
+    vertical-align: middle;
+}
+
+
+.secondInner p{
+    font-size: 30px;
+    color: #3589B8;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.secondInner{
+    width: 20vw;
+    position: relative;
+    top: 20%;
+}
+
+.numbers div{
+    background-color: #FF5E5B;
+    color: white;
+    font-family: 'Alumni Sans', sans-serif;
+    display: inline-block;
+    height: fit-content;
+    
+    text-align: center;
+}
+.numbers{
+    width: fit-content;
+    margin: 0 auto;
+}
+.big div{
+    width: 30px;
+    font-size: 92px;
+    padding: 0px 15px;
+    line-height: 95px;
+    margin: 3px;
+}
+.big{
+    height:100px;
+}
+
+.small div{
+    width: 20px;
+    font-size: 52px;
+    padding: 0px 5px;
+    line-height: 55px;
+    margin: 2px;
+}
+.small{
+    height:60px;
+    margin: 10px 20px 0 0;
+}
+
+.numbers p{
+    font-size: 20px;
+}
+
+
+.minisection {
+    width: 264px;
+} */
