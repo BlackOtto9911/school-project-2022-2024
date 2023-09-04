@@ -1,4 +1,5 @@
-import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import { Route, Routes, HashRouter as BrowserRouter } from 'react-router-dom';
+import ReactDOM from 'react-dom/client';
 
 import './Display.css';
 import GreetingDisplay from './GreetingDisplay/GreetingDisplay';
